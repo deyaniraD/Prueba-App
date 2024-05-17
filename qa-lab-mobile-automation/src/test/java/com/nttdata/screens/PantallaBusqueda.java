@@ -31,26 +31,40 @@ public class PantallaBusqueda extends PageObject {
     }
 
     public void clickBusqueda2(){
+        tiempo(3000);
         busqueda2.click();
     }
 
     public void ingresarBusqueda(String busqueda){
+        tiempo(3000);
         ingresarBusqueda.sendKeys(busqueda);
     }
 
     public void primeraOpcion(){
+        tiempo(3000);
         primeraOpcion.click();
     }
 
     public void siguiente() {
+        tiempo(3000);
         siguiente.click();
     }
 
     public void busca() {
+        tiempo(3000);
         btnBusca.click();
     }
 
     public void validoTexto(String texto) {
+        tiempo(6000);
         texto.equals(txtCntAlojamientos.getText());
+    }
+
+    public void tiempo(int i) {
+        try {
+            Thread.sleep(i);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
