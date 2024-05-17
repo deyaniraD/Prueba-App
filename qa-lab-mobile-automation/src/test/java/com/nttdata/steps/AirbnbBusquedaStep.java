@@ -19,6 +19,7 @@ public class AirbnbBusquedaStep {
         busqueda.clickBusqueda1();
         busqueda.clickBusqueda2();
     }
+
     @Step("Ingresa Busqueda")
     public void ingresoElDestino(String destino) {
         busqueda.ingresarBusqueda(destino);
@@ -37,7 +38,6 @@ public class AirbnbBusquedaStep {
     @Step("clic En El Boton Busca")
     public void clicEnElBotonBusca() {
         busqueda.busca();
-
     }
 
     @Step("valido texto")

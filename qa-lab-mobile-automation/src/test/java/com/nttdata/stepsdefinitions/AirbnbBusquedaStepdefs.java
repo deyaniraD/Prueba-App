@@ -22,7 +22,6 @@ public class AirbnbBusquedaStepdefs {
     @When("doy clic en busqueda")
     public void doyClicEnBusqueda() {
         airbnbBusquedaStep.clicBusqueda();
-
     }
 
     @And("ingreso el destino {string}")
